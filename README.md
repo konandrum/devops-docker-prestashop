@@ -17,12 +17,26 @@ $ docker-compose up -d path/to/the/docker-compose.yaml
 
 You should have 2 more containers running on your docker engine.
 
+To check, run the following command:
+```sh
+$ docker ps
+```
+
 
 How to access the Prestashop web application
 --------------------------------------------
 
 As you can see in the docker-compose file, the application is running over the `8069` port.
 
-So simply open a browser, and go to the following url: [http://localhost:8069](http://localhost:8069)
+```yaml
+...
+  prestashop:
+    image: prestashop/prestashop:1.7
+    ports:
+      - '8069:80'
+...
+```
+
+So simply open a browser, and go to the following url: [http://127.0.0.1:8069](http://127.0.0.1:8069)
 
 You can change the allocated port if this one is already used.
