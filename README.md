@@ -12,7 +12,8 @@ Then retrieve the docker compose file shared in this git repository: [https://ra
 
 Now you can deploy the docker-compose stack like this:
 ```sh
-$ docker-compose up -d path/to/the/docker-compose.yaml
+$ cd path/to/the/docker-compose-directory
+$ docker-compose up -d
 ```
 
 You should have 2 more containers running on your docker engine.
