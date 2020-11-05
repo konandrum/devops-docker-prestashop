@@ -8,7 +8,7 @@ Installation
 
 First, you need to install docker on your computer: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
 
-Then retrieve the docker compose file shared in this git repository:
+Then retrieve the docker compose file shared in this git repository: [https://raw.githubusercontent.com/konandrum/devops-docker-prestashop/main/docker-compose.yaml](https://raw.githubusercontent.com/konandrum/devops-docker-prestashop/main/docker-compose.yaml)
 
 Now you can deploy the docker-compose stack like this:
 ```sh
